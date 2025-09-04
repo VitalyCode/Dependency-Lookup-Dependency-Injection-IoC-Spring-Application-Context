@@ -1,6 +1,7 @@
 package repository;
 
 import model.Post;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -8,6 +9,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.atomic.AtomicLong;
 
+@Component
 public class PostRepository {
 
     private List<Post> posts = new ArrayList<>();
